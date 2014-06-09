@@ -1,0 +1,65 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ultra click</title>    
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/01-wall.css"  />
+
+    <script src="assets/javascript/framework/mootools-core-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/javascript/framework/mootools-more-1.3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <!-- The Wall -->
+    <script src="wall.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://i2.esmas.com/js/libraries/jquery-1.8.2.min.js"></script>
+    <script src="http://i2.esmas.com/js/libraries/jquery.gsa.json.1.0.2.min.js"></script>
+    <script src="assets/javascript/01-wall.js" type="text/javascript" charset="utf-8"></script>
+	<link  href="assets/javascript/css/MooDialog.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src="assets/javascript/MooDialog.js" type="text/javascript"></script>
+	<script src="assets/javascript/Overlay.js" type="text/javascript"></script>
+	<script src="assets/javascript/MooDialog.Fx.js" type="text/javascript"></script>
+	<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+	<style>
+/*Some CSS*/
+* {margin: 0; padding: 0;}
+.magnify {width: 300px; position: relative;top: 50px;}
+
+/*Lets create the magnifying glass*/
+.large {
+	border-radius:100%;position:absolute;height:200px;width:200px;
+	box-shadow:0 0 0 7px rgba(255,255,255,0.85),0 0 7px 7px rgba(0,0,0,0.99),inset 0 0 40px 2px rgba(0,0,0,.25);
+	background:url("http://thecodeplayer.com/uploads/media/iphone.jpg") no-repeat;
+	display:none;
+	transform: scale(1.2, 1.2);
+}
+.small{display:block;}
+
+.magnify #vermas{
+	width: 40%;
+	margin: 0 auto;
+	padding: 25px;
+	text-align: center;
+}
+.magnify #vermas a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+    <div id="viewport">
+        <div id="wall"></div>
+    </div>
+    <!--[if lt IE 7 ]>
+    <script src="/application/assets/javascript/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg');</script>
+    <![endif]-->
+</body>
+</html>
